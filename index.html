@@ -8,143 +8,12 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Ezequiel</title>
-  
-  <style>
-
-.navbar {
-  overflow: hidden;
-  background-color: #333;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index:2;
-}
-
-p{
-  color:black;
-  font-size: 20px;
-  align:center;ø
-}
-p1{
-  color:white;
-  font-size: 20px;
-}
-body {
-	background-color: #ccc;
-  padding: 50px;
-  font:white;
-}
- 
-.image{
-  
-  max-width: 350px;
-}
-
-
-
-html {
-	font-size: 20px;
-}
-.icon-button {
-	background-color: white;
-	border-radius: 3.6rem;
-	cursor: pointer;
-	display: inline-block;
-	font-size: 2.0rem;
-	height: 3.6rem;
-	line-height: 3.6rem;
-	margin: 0 5px;
-	position: relative;
-	text-align: center;
-	-webkit-user-select: none;
-	   -moz-user-select: none;
-	    -ms-user-select: none;
-	        user-select: none;
-	width: 3.6rem;
-}
-
-/* Circle */
-.icon-button span {
-	border-radius: 0;
-	display: block;
-	height: 0;
-	left: 50%;
-	margin: 0;
-	position: absolute;
-	top: 50%;
-	-webkit-transition: all 0.3s;
-	   -moz-transition: all 0.3s;
-	     -o-transition: all 0.3s;
-	        transition: all 0.3s;
-	width: 0;
-}
-.icon-button:hover span {
-	width: 3.6rem;
-	height: 3.6rem;
-	border-radius: 3.6rem;
-	margin: -1.8rem;
-}
-.twitter span {
-	background-color: #4099ff;
-}
-.facebook span {
-	background-color: #3B5998;
-}
-.google-plus span {
-	background-color: #db5a3c;
-}
-
-/* Icons */
-.icon-button i {
-	background: none;
-	color: white;
-	height: 3.6rem;
-	left: 0;
-	line-height: 3.6rem;
-	position: absolute;
-	top: 0;
-	-webkit-transition: all 0.3s;
-	   -moz-transition: all 0.3s;
-	     -o-transition: all 0.3s;
-	        transition: all 0.3s;
-	width: 3.6rem;
-	z-index: 10;
-}
-.icon-button .icon-twitter {
-	color: #4099ff;
-}
-.icon-button .icon-facebook {
-	color: #3B5998;
-}
-.icon-button .icon-google-plus {
-	color: #db5a3c;
-}
-.icon-button:hover .icon-twitter,
-.icon-button:hover .icon-facebook,
-.icon-button:hover .icon-google-plus {
-	color: white;
-}
- 
-a{
-  color:black;
-}
-
-.img-card{
-  margin-bottom: 20px;
-}
- 
-
-   label{ display: block; width: 100%;}
- 
- .container{
-   margin-top: 100px;
-   margin-bottom: 300px;
- }
- 
-  </style>
-  
-  
-    </head>
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <!--Uikit CSS-->
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+</head>
  <body>
     
 
@@ -175,7 +44,7 @@ a{
  
     
       
-      
+      <span uk-icon="heart"></span>
       
       
       <!--About ME -->
@@ -183,7 +52,7 @@ a{
       <div class="container">
         <div class="row">
           <div class="col">
-            <img class="image" src="biopic.jpg"  alt="Ezequiel">
+            <img class="image" src="assets/images/biopic.jpg"  alt="Ezequiel">
           </div>
           <div class="col">
             <p>My name is Ezequiel ,  I was born in Nicaragua and raised in Miami. Since July 2008, I have been 
@@ -205,10 +74,10 @@ a{
      <div class="container">
         <div class="row">
           <div class="col-xl-6 col-lg-6 col-md-6 col-12 img-card">
-            <img src="project1.png" class="card-img-top" ><a href="https://ezequiell323.github.io/groupproject01/">Event Splash</a>
+            <img src="assets/images/project1.png" class="card-img-top" ><a href="https://ezequiell323.github.io/groupproject01/">Event Splash</a>
           </div>
             <div class="col-xl-6 col-lg-6 col-md-6 col-12 img-card">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQAqC17Zbi1jgawBOKXZGF3_SDrjv4Ec5-uUgWhIIHXkSZB3-2&s" class="card-img-top" alt="...">Future Project Coming Soon
+            <img src="assets/images/EET.png" class="card-img-top" ><a href="https://employee-tracker-covid19.herokuapp.com/">EET</a>
           </div>
         </div>
        
@@ -312,5 +181,7 @@ a{
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
   </body>
 </html>
