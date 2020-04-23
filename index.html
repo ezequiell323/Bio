@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="css/uikit.min.css" />
     <script src="js/uikit.min.js"></script>
     <script src="js/uikit-icons.min.js"></script>
-</head>
+    <script src="assets/script/script.js"></script>
+  </head>
  <body>
     
 
@@ -44,7 +45,7 @@
  
     
       
-      <span uk-icon="heart"></span>
+     
       
       
       <!--About ME -->
@@ -72,26 +73,25 @@
       <!--Profolio-->
 <p1 id="p2">Profolio</p1>
      <div class="container">
-        <div class="row">
-          <div class="col-xl-6 col-lg-6 col-md-6 col-12 img-card">
-            <img src="assets/images/project1.png" class="card-img-top" ><a href="https://ezequiell323.github.io/groupproject01/">Event Splash</a>
-          </div>
+         <div class="row">
             <div class="col-xl-6 col-lg-6 col-md-6 col-12 img-card">
-            <img src="assets/images/EET.png" class="card-img-top" ><a href="https://employee-tracker-covid19.herokuapp.com/">EET</a>
-          </div>
+          <div class="uk-text-center">
+            <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                <img class="uk-transition-scale-up uk-transition-opaque" src="assets/images/project1.png" alt="">
+            </div>
+            <a href="https://ezequiell323.github.io/groupproject01/">Event Splash</a>
         </div>
-       
-          <div class="row">
-            <div class="col-xl-6 col-lg-6 col-md-6 col-12 img-card">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQAqC17Zbi1jgawBOKXZGF3_SDrjv4Ec5-uUgWhIIHXkSZB3-2&s" class="card-img-top" alt="...">Future Project Coming Soon
-            </div>
-            <div class="col-xl-6 col-lg-6 col-md-6 col-12 img-card">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQAqC17Zbi1jgawBOKXZGF3_SDrjv4Ec5-uUgWhIIHXkSZB3-2&s" class="card-img-top" alt="...">Future Project Coming Soon
-              </div>
-            </div>
+        
+        <div class="col-xl-6 col-lg-6 col-md-6 col-12 img-card"></div>
+        <div class="uk-text-center">
+          <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+              <img class="uk-transition-scale-up uk-transition-opaque" src="assets/images/EET.png" alt="">
           </div>
+          <a href="https://employee-tracker-covid19.herokuapp.com/">Emergency Employee Tracker</a>
+      </div>
     
-      
+        </div>
+      </div>
       
       
       
@@ -116,7 +116,7 @@
         <div class="container">
           <div class="row">
             <div class="col -2"><p>Ezequiel Largaespada</p>
-                <p>Phone:786.274.3794</p>
+             <p>Phone:786.274.3794</p>
                 <p>Eze.largaespada@gmail.com</p>
             <a href="https://twitter.com/minimalmonkey" class="icon-button twitter"><i class="icon-twitter">T</i><span></span></a>
             <a href="https://facebook.com" class="icon-button facebook"><i class="icon-facebook">F</i><span></span></a>
@@ -126,11 +126,11 @@
          
         <div class="col col-inputs">
           <p class="form-item">
-            <label for="name">Name</label>
-            <input type="text" id="name" />
+            <label for="name">Email</label>
+            <input id="email" type="email" placeholder="youremail@---.com">
           </p>
           <p class="form-item">
-            <label for="email">Email</label>
+            <label id="subject">Subject</label>
             <input type="email" id="email" />
           </p>
        
@@ -139,14 +139,15 @@
         <textarea name="" id="message" rows="4"></textarea>
       </p>
       <p>
-        <button type="submit" class="submit-btn">Send</button>
+        <button id="send" class="submit-btn" onclick="send()">Send</button>
       </p>
     </form>
   </div>
 </section>
+</div>
 
-      
-        
+
+
 
 
 
